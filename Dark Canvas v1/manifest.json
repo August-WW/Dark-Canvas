@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Canvas Dark Mode",
+    "version": "1.0",
+    "description": "Toggle dark mode for Canvas LMS.",
+    "permissions": ["activeTab", "scripting"],
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["https://*.instructure.com/*"],
+        "css": ["dark-mode.css"]
+      }
+    ]
+  }
+  
+
+
